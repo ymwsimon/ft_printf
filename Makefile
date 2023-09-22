@@ -8,13 +8,11 @@ FLAGS = -Wall -Werror -Wextra
 
 CC = cc
 
-INCLUDE = ft_printf.h
-
 $(NAME) : $(OBJS)
 	ar -rcs $(NAME) $(OBJS)
 
 $(OBJS) : $(SRCS)
-	$(CC) $(FLAGS) -c $(SRCS) $(INCLUDE)
+	$(CC) $(FLAGS) -c $(SRCS)
 
 all : $(NAME)
 
